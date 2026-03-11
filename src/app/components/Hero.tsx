@@ -175,28 +175,102 @@ export function Hero({ darkMode }: HeroProps) {
               </div>
             </div>
 
-            {/* Floating badges */}
-            <motion.div
-              animate={{ y: [-6, 6, -6] }}
-              transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-              className={`absolute -top-4 -right-6 px-3 py-2 rounded-xl shadow-lg flex items-center gap-2 ${
-                darkMode ? "bg-gray-800 text-white border border-gray-700" : "bg-white text-gray-800 border border-gray-100"
-              }`}
-            >
-              <span className="text-xl">🤖</span>
-              <span className="text-xs font-semibold">AI Engineer</span>
-            </motion.div>
+            {/* Orbiting elements */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              {/* Outer orbit (large circle) */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute w-96 h-96 rounded-full border border-dashed border-blue-500/20"
+              />
+              
+              {/* Middle orbit */}
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                className="absolute w-80 h-80 rounded-full border border-dashed border-blue-400/15"
+              />
 
-            <motion.div
-              animate={{ y: [6, -6, 6] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className={`absolute -bottom-4 -left-6 px-3 py-2 rounded-xl shadow-lg flex items-center gap-2 ${
-                darkMode ? "bg-gray-800 text-white border border-gray-700" : "bg-white text-gray-800 border border-gray-100"
-              }`}
-            >
-              <span className="text-xl">🧠</span>
-              <span className="text-xs font-semibold">ML Specialist</span>
-            </motion.div>
+              {/* AI element - top orbit */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute w-96 h-96"
+              >
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <motion.div
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className={`px-3 py-2 rounded-lg shadow-lg flex items-center gap-1 ${
+                      darkMode ? "bg-blue-900/40 text-blue-300 border border-blue-700/50" : "bg-blue-100 text-blue-700 border border-blue-300"
+                    }`}
+                  >
+                    <span className="text-sm">🤖</span>
+                    <span className="text-xs font-semibold">IA</span>
+                  </motion.div>
+                </div>
+              </motion.div>
+
+              {/* ML element - bottom left orbit */}
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                className="absolute w-80 h-80"
+              >
+                <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2">
+                  <motion.div
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 2.5, repeat: Infinity, delay: 0.3 }}
+                    className={`px-3 py-2 rounded-lg shadow-lg flex items-center gap-1 ${
+                      darkMode ? "bg-purple-900/40 text-purple-300 border border-purple-700/50" : "bg-purple-100 text-purple-700 border border-purple-300"
+                    }`}
+                  >
+                    <span className="text-sm">🧠</span>
+                    <span className="text-xs font-semibold">ML</span>
+                  </motion.div>
+                </div>
+              </motion.div>
+
+              {/* Data element - bottom right orbit */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute w-96 h-96"
+              >
+                <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2">
+                  <motion.div
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 2, repeat: Infinity, delay: 0.6 }}
+                    className={`px-3 py-2 rounded-lg shadow-lg flex items-center gap-1 ${
+                      darkMode ? "bg-green-900/40 text-green-300 border border-green-700/50" : "bg-green-100 text-green-700 border border-green-300"
+                    }`}
+                  >
+                    <span className="text-sm">📊</span>
+                    <span className="text-xs font-semibold">Data</span>
+                  </motion.div>
+                </div>
+              </motion.div>
+
+              {/* Code element - top right orbit */}
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                className="absolute w-80 h-80"
+              >
+                <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
+                  <motion.div
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 2, repeat: Infinity, delay: 0.9 }}
+                    className={`px-3 py-2 rounded-lg shadow-lg flex items-center gap-1 ${
+                      darkMode ? "bg-orange-900/40 text-orange-300 border border-orange-700/50" : "bg-orange-100 text-orange-700 border border-orange-300"
+                    }`}
+                  >
+                    <span className="text-sm">⚡</span>
+                    <span className="text-xs font-semibold">Code</span>
+                  </motion.div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>

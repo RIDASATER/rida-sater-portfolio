@@ -70,7 +70,7 @@ export function Footer({ darkMode }: FooterProps) {
             </h4>
             <div className="flex gap-3">
               {[
-                { icon: Linkedin, href: "https://linkedin.com/in/ridasater", label: "LinkedIn" },
+                { icon: Linkedin, href: "https://linkedin.com/in/rida-sater", label: "LinkedIn" },
                 { icon: Github, href: "https://github.com/ridasater", label: "GitHub" },
                 { icon: Mail, href: "mailto:saterriida@gmail.com", label: "Email" },
               ].map((social) => (
