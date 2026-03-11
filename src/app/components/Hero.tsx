@@ -20,15 +20,6 @@ export function Hero({ darkMode }: HeroProps) {
           : "bg-gradient-to-br from-slate-50 via-blue-50/30 to-white"
       }`}
     >
-      {/* Subtle grid background */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `linear-gradient(${darkMode ? "#fff" : "#000"} 1px, transparent 1px), linear-gradient(90deg, ${darkMode ? "#fff" : "#000"} 1px, transparent 1px)`,
-          backgroundSize: "60px 60px",
-        }}
-      />
-
       {/* Glow orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-400/8 rounded-full blur-3xl pointer-events-none" />
@@ -181,7 +172,7 @@ export function Hero({ darkMode }: HeroProps) {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 16, repeat: Infinity, ease: "linear" }}
-                className="absolute w-72 h-72"
+                className="absolute w-96 h-96"
               >
                 {/* Machine Learning - Top */}
                 <motion.div
@@ -189,13 +180,13 @@ export function Hero({ darkMode }: HeroProps) {
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                   className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2"
                 >
-                  <div className={`w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
+                  <div className={`w-40 h-40 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
                     darkMode 
                       ? "bg-gradient-to-br from-blue-900/60 to-blue-800/40 border-blue-500/60 text-blue-100" 
                       : "bg-gradient-to-br from-blue-200/80 to-blue-100/60 border-blue-400 text-blue-900"
                   }`}>
-                    <span className="text-3xl mb-1">🤖</span>
-                    <span className="text-xs font-bold text-center">Machine<br/>Learning</span>
+                    <span className="text-4xl mb-2">🤖</span>
+                    <span className="text-sm font-bold text-center">Machine<br/>Learning</span>
                   </div>
                 </motion.div>
 
@@ -205,13 +196,13 @@ export function Hero({ darkMode }: HeroProps) {
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
                   className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2"
                 >
-                  <div className={`w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
+                  <div className={`w-40 h-40 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
                     darkMode 
                       ? "bg-gradient-to-br from-purple-900/60 to-purple-800/40 border-purple-500/60 text-purple-100" 
                       : "bg-gradient-to-br from-purple-200/80 to-purple-100/60 border-purple-400 text-purple-900"
                   }`}>
-                    <span className="text-3xl mb-1">🧠</span>
-                    <span className="text-xs font-bold text-center">Deep<br/>Learning</span>
+                    <span className="text-4xl mb-2">🧠</span>
+                    <span className="text-sm font-bold text-center">Deep<br/>Learning</span>
                   </div>
                 </motion.div>
 
@@ -221,13 +212,13 @@ export function Hero({ darkMode }: HeroProps) {
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
                   className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2"
                 >
-                  <div className={`w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
+                  <div className={`w-40 h-40 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
                     darkMode 
                       ? "bg-gradient-to-br from-green-900/60 to-green-800/40 border-green-500/60 text-green-100" 
                       : "bg-gradient-to-br from-green-200/80 to-green-100/60 border-green-400 text-green-900"
                   }`}>
-                    <span className="text-3xl mb-1">💬</span>
-                    <span className="text-xs font-bold text-center">NLP</span>
+                    <span className="text-4xl mb-2">💬</span>
+                    <span className="text-sm font-bold text-center">NLP</span>
                   </div>
                 </motion.div>
 
@@ -237,13 +228,13 @@ export function Hero({ darkMode }: HeroProps) {
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
                   className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2"
                 >
-                  <div className={`w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
+                  <div className={`w-40 h-40 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
                     darkMode 
                       ? "bg-gradient-to-br from-orange-900/60 to-orange-800/40 border-orange-500/60 text-orange-100" 
                       : "bg-gradient-to-br from-orange-200/80 to-orange-100/60 border-orange-400 text-orange-900"
                   }`}>
-                    <span className="text-3xl mb-1">👁️</span>
-                    <span className="text-xs font-bold text-center">Computer<br/>Vision</span>
+                    <span className="text-4xl mb-2">👁️</span>
+                    <span className="text-sm font-bold text-center">Computer<br/>Vision</span>
                   </div>
                 </motion.div>
 
@@ -253,12 +244,12 @@ export function Hero({ darkMode }: HeroProps) {
                   transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 >
-                  <div className={`w-16 h-16 rounded-full flex items-center justify-center shadow-md border border-blue-400 ${
+                  <div className={`w-20 h-20 rounded-full flex items-center justify-center shadow-md border border-blue-400 ${
                     darkMode 
                       ? "bg-gradient-to-br from-blue-700 to-blue-900" 
                       : "bg-gradient-to-br from-blue-300 to-blue-400"
                   }`}>
-                    <span className="text-2xl">✨</span>
+                    <span className="text-3xl">✨</span>
                   </div>
                 </motion.div>
               </motion.div>
