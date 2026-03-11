@@ -186,6 +186,7 @@ export function Hero({ darkMode }: HeroProps) {
               </div>
             </div>
           </div>
+        </motion.div>
 
       {/* Scroll cue */}
       <motion.button

@@ -109,6 +109,7 @@ export function Contact({ darkMode }: ContactProps) {
             <h4 className={`text-sm font-semibold uppercase tracking-wide mb-4 ${darkMode ? "text-gray-500" : "text-gray-400"}`}>
               Connect
             </h4>
+            
             <div className="flex gap-3">
               {[
                 { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/rida-sater", color: "bg-blue-600" },
