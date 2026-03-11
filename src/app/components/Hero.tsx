@@ -176,7 +176,7 @@ export function Hero({ darkMode }: HeroProps) {
           <div className="relative">
             {/* Decorative ring */}
             <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-blue-500/20 to-blue-700/20 blur-xl" />
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-400 to-blue-700 p-[3px]">
+            <div className="absolute -inset-1 rounded-full bg-blue-600 p-[3px]">
               <div className={`rounded-full ${darkMode ? "bg-gray-950" : "bg-white"} p-1`}>
                 <img
                   src={profilePhoto}
