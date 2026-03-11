@@ -1,7 +1,6 @@
 
-  # Portfolio UI/UX Design
+  # Portfolio 
 
-  This is a code bundle for Portfolio UI/UX Design. The original project is available at https://www.figma.com/design/hUQTqMIHFfrLkk895GGb7h/Portfolio-UI-UX-Design.
 
   ## Running the code
 
