@@ -71,7 +71,7 @@ export function Contact({ darkMode }: ContactProps) {
               {[
                 { icon: Mail, label: "Email", value: "saterriida@gmail.com", href: "mailto:saterriida@gmail.com" },
                 { icon: Phone, label: "Phone", value: "+212 655-120966", href: "tel:+212655120966" },
-                { icon: MapPin, label: "Location", value: "Rabat, Morocco 🇲🇦", href: null },
+                { icon: MapPin, label: "Location", value: "Morocco 🇲🇦", href: null },
               ].map((item) => (
                 <motion.div
                   key={item.label}
@@ -111,7 +111,7 @@ export function Contact({ darkMode }: ContactProps) {
             </h4>
             <div className="flex gap-3">
               {[
-                { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/ridasater", color: "bg-blue-600" },
+                { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/rida-sater", color: "bg-blue-600" },
                 { icon: Github, label: "GitHub", href: "https://github.com/ridasater", color: darkMode ? "bg-gray-700" : "bg-gray-800" },
                 { icon: Download, label: "Download CV", href: "#", color: "bg-green-600" },
               ].map((link) => (

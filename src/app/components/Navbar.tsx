@@ -52,9 +52,6 @@ export function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
           className="flex items-center gap-2 group"
           whileHover={{ scale: 1.03 }}
         >
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-sm">RS</span>
-          </div>
         </motion.a>
 
         {/* Desktop Links */}
