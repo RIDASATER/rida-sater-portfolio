@@ -33,9 +33,9 @@ export function Hero({ darkMode }: HeroProps) {
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
         style={{
-          width: "500px",
-          height: "500px",
-          background: `radial-gradient(circle, ${darkMode ? "rgb(3, 7, 18)" : "rgb(255, 255, 255)"} 0%, transparent 70%)`,
+          width: "600px",
+          height: "600px",
+          background: `radial-gradient(circle, ${darkMode ? "rgb(3, 7, 18)" : "rgb(255, 255, 255)"} 0%, transparent 75%)`,
           zIndex: 1,
         }}
       />
