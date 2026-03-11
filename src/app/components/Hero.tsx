@@ -20,6 +20,26 @@ export function Hero({ darkMode }: HeroProps) {
           : "bg-gradient-to-br from-slate-50 via-blue-50/30 to-white"
       }`}
     >
+      {/* Subtle grid background */}
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `linear-gradient(${darkMode ? "#fff" : "#000"} 1px, transparent 1px), linear-gradient(90deg, ${darkMode ? "#fff" : "#000"} 1px, transparent 1px)`,
+          backgroundSize: "60px 60px",
+        }}
+      />
+
+      {/* Center mask to hide grid in the middle */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+        style={{
+          width: "500px",
+          height: "500px",
+          background: `radial-gradient(circle, ${darkMode ? "rgb(3, 7, 18)" : "rgb(255, 255, 255)"} 0%, transparent 70%)`,
+          zIndex: 1,
+        }}
+      />
+
       {/* Glow orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-400/8 rounded-full blur-3xl pointer-events-none" />
