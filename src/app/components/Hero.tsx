@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { Download, ArrowRight, Mail, ChevronDown } from "lucide-react";
-import profilePhoto from "figma:asset/70721cb2906db13fdb37ef08780df81c547287fd.png";
-
+import profilePhoto from "@/assets/70721cb2906db13fdb37ef08780df81c547287fd.png";
 interface HeroProps {
   darkMode: boolean;
 }
