@@ -175,100 +175,92 @@ export function Hero({ darkMode }: HeroProps) {
               </div>
             </div>
 
-            {/* Orbiting elements */}
+            {/* 4 AI Concept Orbs - Rotating around center */}
             <div className="absolute inset-0 flex items-center justify-center">
-              {/* Outer orbit (large circle) */}
+              {/* Central rotation container */}
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute w-96 h-96 rounded-full border border-dashed border-blue-500/20"
-              />
-              
-              {/* Middle orbit */}
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                className="absolute w-80 h-80 rounded-full border border-dashed border-blue-400/15"
-              />
-
-              {/* AI element - top orbit */}
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute w-96 h-96"
+                transition={{ duration: 16, repeat: Infinity, ease: "linear" }}
+                className="absolute w-72 h-72"
               >
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <motion.div
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                    className={`px-3 py-2 rounded-lg shadow-lg flex items-center gap-1 ${
-                      darkMode ? "bg-blue-900/40 text-blue-300 border border-blue-700/50" : "bg-blue-100 text-blue-700 border border-blue-300"
-                    }`}
-                  >
-                    <span className="text-sm">🤖</span>
-                    <span className="text-xs font-semibold">IA</span>
-                  </motion.div>
-                </div>
-              </motion.div>
+                {/* Machine Learning - Top */}
+                <motion.div
+                  animate={{ scale: [1, 1.08, 1] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2"
+                >
+                  <div className={`w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
+                    darkMode 
+                      ? "bg-gradient-to-br from-blue-900/60 to-blue-800/40 border-blue-500/60 text-blue-100" 
+                      : "bg-gradient-to-br from-blue-200/80 to-blue-100/60 border-blue-400 text-blue-900"
+                  }`}>
+                    <span className="text-3xl mb-1">🤖</span>
+                    <span className="text-xs font-bold text-center">Machine<br/>Learning</span>
+                  </div>
+                </motion.div>
 
-              {/* ML element - bottom left orbit */}
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                className="absolute w-80 h-80"
-              >
-                <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2">
-                  <motion.div
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ duration: 2.5, repeat: Infinity, delay: 0.3 }}
-                    className={`px-3 py-2 rounded-lg shadow-lg flex items-center gap-1 ${
-                      darkMode ? "bg-purple-900/40 text-purple-300 border border-purple-700/50" : "bg-purple-100 text-purple-700 border border-purple-300"
-                    }`}
-                  >
-                    <span className="text-sm">🧠</span>
-                    <span className="text-xs font-semibold">ML</span>
-                  </motion.div>
-                </div>
-              </motion.div>
+                {/* Deep Learning - Right */}
+                <motion.div
+                  animate={{ scale: [1, 1.08, 1] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
+                  className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2"
+                >
+                  <div className={`w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
+                    darkMode 
+                      ? "bg-gradient-to-br from-purple-900/60 to-purple-800/40 border-purple-500/60 text-purple-100" 
+                      : "bg-gradient-to-br from-purple-200/80 to-purple-100/60 border-purple-400 text-purple-900"
+                  }`}>
+                    <span className="text-3xl mb-1">🧠</span>
+                    <span className="text-xs font-bold text-center">Deep<br/>Learning</span>
+                  </div>
+                </motion.div>
 
-              {/* Data element - bottom right orbit */}
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute w-96 h-96"
-              >
-                <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2">
-                  <motion.div
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ duration: 2, repeat: Infinity, delay: 0.6 }}
-                    className={`px-3 py-2 rounded-lg shadow-lg flex items-center gap-1 ${
-                      darkMode ? "bg-green-900/40 text-green-300 border border-green-700/50" : "bg-green-100 text-green-700 border border-green-300"
-                    }`}
-                  >
-                    <span className="text-sm">📊</span>
-                    <span className="text-xs font-semibold">Data</span>
-                  </motion.div>
-                </div>
-              </motion.div>
+                {/* NLP - Bottom */}
+                <motion.div
+                  animate={{ scale: [1, 1.08, 1] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2"
+                >
+                  <div className={`w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
+                    darkMode 
+                      ? "bg-gradient-to-br from-green-900/60 to-green-800/40 border-green-500/60 text-green-100" 
+                      : "bg-gradient-to-br from-green-200/80 to-green-100/60 border-green-400 text-green-900"
+                  }`}>
+                    <span className="text-3xl mb-1">💬</span>
+                    <span className="text-xs font-bold text-center">NLP</span>
+                  </div>
+                </motion.div>
 
-              {/* Code element - top right orbit */}
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                className="absolute w-80 h-80"
-              >
-                <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
-                  <motion.div
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ duration: 2, repeat: Infinity, delay: 0.9 }}
-                    className={`px-3 py-2 rounded-lg shadow-lg flex items-center gap-1 ${
-                      darkMode ? "bg-orange-900/40 text-orange-300 border border-orange-700/50" : "bg-orange-100 text-orange-700 border border-orange-300"
-                    }`}
-                  >
-                    <span className="text-sm">⚡</span>
-                    <span className="text-xs font-semibold">Code</span>
-                  </motion.div>
-                </div>
+                {/* Computer Vision - Left */}
+                <motion.div
+                  animate={{ scale: [1, 1.08, 1] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2"
+                >
+                  <div className={`w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-lg border-2 transition-all ${
+                    darkMode 
+                      ? "bg-gradient-to-br from-orange-900/60 to-orange-800/40 border-orange-500/60 text-orange-100" 
+                      : "bg-gradient-to-br from-orange-200/80 to-orange-100/60 border-orange-400 text-orange-900"
+                  }`}>
+                    <span className="text-3xl mb-1">👁️</span>
+                    <span className="text-xs font-bold text-center">Computer<br/>Vision</span>
+                  </div>
+                </motion.div>
+
+                {/* Central AI icon */}
+                <motion.div
+                  animate={{ rotateY: 360 }}
+                  transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                >
+                  <div className={`w-16 h-16 rounded-full flex items-center justify-center shadow-md border border-blue-400 ${
+                    darkMode 
+                      ? "bg-gradient-to-br from-blue-700 to-blue-900" 
+                      : "bg-gradient-to-br from-blue-300 to-blue-400"
+                  }`}>
+                    <span className="text-2xl">✨</span>
+                  </div>
+                </motion.div>
               </motion.div>
             </div>
           </div>
