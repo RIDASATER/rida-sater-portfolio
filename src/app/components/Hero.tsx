@@ -17,8 +17,8 @@ export function Hero({ darkMode }: HeroProps) {
   };
 
   const stats = [
-    { value: "5+", label: "Projects", sublabel: "Shipped" },
-    { value: "3+", label: "Internships", sublabel: "Completed" },
+    { value: "6+", label: "Projects", sublabel: "Shipped" },
+    { value: "5+", label: "Internships", sublabel: "Completed" },
     { value: "M.Sc.", label: "Degree", sublabel: "Engineering" },
   ];
 
@@ -272,7 +272,7 @@ export function Hero({ darkMode }: HeroProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.55 }}
-              className="flex flex-wrap gap-3 mb-14"
+              className="flex flex-wrap gap-3 mb-4"
             >
               {/* Primary CTA */}
               <motion.button
