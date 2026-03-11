@@ -1,0 +1,225 @@
+Create a modern, professional and interactive personal portfolio website for a Data Scientist and Software Engineer named **Rida SATER**.
+
+The portfolio must highlight expertise in Artificial Intelligence, Machine Learning, NLP, MLOps, Software Engineering and Mobile Development.
+
+Design Style:
+
+* Clean, minimal and modern interface inspired by Apple and Stripe.
+* Strong visual hierarchy.
+* Smooth animations and micro-interactions.
+* Primary colors: blue and white.
+* Add subtle Moroccan cultural touches using green and red accents.
+* Rounded cards, soft shadows and modern typography.
+* Responsive design for desktop and mobile.
+
+The interface must be attractive, intuitive and optimized for recruiters and tech companies.
+
+---
+
+1. HERO SECTION
+
+Large professional photo
+
+Name: **Rida SATER**
+
+Title: **Data Scientist & Software Engineer**
+
+Tagline:
+"Building intelligent systems and scalable digital solutions using Artificial Intelligence, Machine Learning and modern software technologies."
+
+Buttons:
+• View Projects
+• Download CV
+• Contact Me
+
+---
+
+2. ABOUT ME
+
+Short professional summary:
+
+Rida SATER is a Data Scientist and Software Engineer specialized in Artificial Intelligence, Machine Learning, Natural Language Processing and Full-Stack Development. He focuses on building intelligent systems, scalable ML pipelines and modern digital platforms combining AI and software engineering.
+
+Education timeline:
+
+• Master of Excellence in Data Science & Information Systems Security – Sultan Moulay Slimane University
+• Bachelor in Data Science & Information Systems Security
+• DUT in Systems and Network Administration – EST Khénifra
+
+---
+
+3. TECHNICAL SKILLS
+
+Use visual skill cards or animated progress bars.
+
+Data Science & Machine Learning
+
+* Exploratory Data Analysis
+* Feature Engineering
+* Classification
+* Regression
+* Clustering
+* Natural Language Processing
+* Deep Learning (CNN, LSTM)
+
+AI Frameworks
+
+* Scikit-learn
+* TensorFlow
+* PyTorch
+* HuggingFace Transformers
+
+MLOps & Deployment
+
+* MLflow
+* DVC
+* Docker
+* FastAPI
+* REST APIs
+* Git / GitHub
+
+Software Development
+
+* Python
+* JavaScript
+* React.js
+* Node.js
+* Express.js
+* HTML
+* CSS
+* PHP
+
+Mobile Development
+
+* Flutter
+
+Databases
+
+* MySQL
+* PostgreSQL
+* Firebase
+
+---
+
+4. PROFESSIONAL EXPERIENCE
+
+Use a vertical timeline with modern cards.
+
+Technocolabs Software Inc – Data Science Intern
+
+• Built machine learning pipelines for data processing and classification
+• Performed exploratory data analysis and feature engineering
+• Developed ML models such as Random Forest, SVM and Logistic Regression
+• Integrated models into applications through APIs
+
+---
+
+Hictij Platform – Full-Stack Developer
+
+• Designed and developed a complete web platform
+• Frontend development using React.js
+• Backend architecture using Laravel
+• Implemented secure REST APIs
+• Designed database structure and authentication system
+
+---
+
+ORMVAO – Desktop Developer
+
+• Developed a desktop application for managing the organization's IT assets
+• Designed modules for equipment tracking and inventory management
+• Implemented data storage and management features
+• Built a user-friendly interface for administrative staff
+
+---
+
+ORMVAO – Mobile Developer
+
+• Developed a mobile application for internal training management
+• Designed intuitive UI and integrated backend APIs
+• Implemented modules for sessions, participants and scheduling
+
+---
+
+EST Khénifra – Mobile Developer
+
+• Developed a mobile application for managing the cafeteria (buvette) of EST Khénifra
+• Implemented features for order management, products and payments
+• Designed a simple and efficient mobile user interface
+
+---
+
+5. PROJECTS SECTION
+
+Display projects using modern cards with images and hover effects.
+
+Project 1 — NLP Pipeline for OCR Text Extraction
+
+AI pipeline extracting text from scanned documents using OCR, performing NLP preprocessing and generating embeddings for document classification.
+
+Technologies:
+Python, OpenCV, Tesseract OCR, NLTK, PyTorch
+
+---
+
+Project 2 — Sentiment Analysis System
+
+Machine learning system analyzing customer reviews using Natural Language Processing and deep learning models.
+
+Technologies:
+Python, Scikit-learn, NLP models, REST API deployment
+
+---
+
+Project 3 — Driver Drowsiness Detection
+
+Real-time deep learning system detecting driver fatigue using computer vision and CNN.
+
+Technologies:
+Python, TensorFlow, OpenCV
+
+---
+
+6. INNOVATION & ACHIEVEMENTS
+
+Highlight key strengths:
+
+• AI system development
+• Machine Learning pipelines
+• MLOps architecture
+• Full-Stack web development
+• Mobile application development
+
+---
+
+7. CONTACT SECTION
+
+Professional contact layout with icons.
+
+Email: [saterriida@gmail.com](mailto:saterriida@gmail.com)
+Location: Rabat, Morocco
+Phone: +212 655-120966
+
+Buttons:
+• LinkedIn
+• GitHub
+• Download CV
+
+---
+
+8. FOOTER
+
+Minimalist footer with social links and copyright.
+
+---
+
+UI/UX Enhancements:
+
+• Smooth scrolling
+• Interactive project cards
+• Hover animations
+• Dark mode toggle
+• Animated skill bars
+• Fully responsive design
+
+The portfolio should look like a high-level portfolio for an AI engineer and software developer to impress recruiters in data science, machine learning and software engineering companies.
