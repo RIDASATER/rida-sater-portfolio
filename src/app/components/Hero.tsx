@@ -197,17 +197,6 @@ export function Hero({ darkMode }: HeroProps) {
               <span className="text-xl">🧠</span>
               <span className="text-xs font-semibold">ML Specialist</span>
             </motion.div>
-
-            <motion.div
-              animate={{ y: [-4, 5, -4] }}
-              transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className={`absolute top-1/2 -translate-y-1/2 -left-8 px-3 py-2 rounded-xl shadow-lg flex items-center gap-2 ${
-                darkMode ? "bg-gray-800 text-white border border-gray-700" : "bg-white text-gray-800 border border-gray-100"
-              }`}
-            >
-              <span className="text-xl">📊</span>
-              <span className="text-xs font-semibold">Data Scientist</span>
-            </motion.div>
           </div>
         </motion.div>
       </div>

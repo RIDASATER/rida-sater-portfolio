@@ -73,12 +73,11 @@ export function About({ darkMode }: AboutProps) {
           <FadeIn delay={0.1}>
             <div>
               <p className={`text-lg leading-relaxed mb-6 ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-                Rida SATER is a <strong className={darkMode ? "text-white" : "text-gray-900"}>Data Scientist and Software Engineer</strong> specialized
+                I am Rida SATER a <strong className={darkMode ? "text-white" : "text-gray-900"}>Data Scientist and Software Engineer</strong> specialized
                 in Artificial Intelligence, Machine Learning, Natural Language Processing and Full-Stack Development.
               </p>
               <p className={`text-lg leading-relaxed mb-8 ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-                He focuses on building intelligent systems, scalable ML pipelines and modern digital platforms
-                combining AI and software engineering to solve real-world problems.
+                I focus on building intelligent systems, scalable ML pipelines, and modern digital platforms that combine AI and software engineering to solve real-world problems.
               </p>
 
               {/* Info cards */}
