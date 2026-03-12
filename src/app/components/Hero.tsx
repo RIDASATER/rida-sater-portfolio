@@ -293,7 +293,9 @@ export function Hero({ darkMode }: HeroProps) {
               <motion.a
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.97 }}
-                href="#"
+                href="https://drive.google.com/file/d/1wjvJlSab7w5jHcGNsOYQZRn9B9rqC17h/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="card-glass flex items-center gap-2.5 px-7 py-3.5 rounded-2xl font-medium text-sm transition-all"
                 style={{
                   background: darkMode ? "rgba(255,255,255,0.05)" : "rgba(255,255,255,0.8)",
