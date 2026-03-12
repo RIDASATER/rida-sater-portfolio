@@ -17,14 +17,14 @@ export function Contact({ darkMode }: ContactProps) {
     
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzMAZoPqN8b_Zuco4UVljS_-Fb-GSno3DBkgW35yFVr3TpOskAdyU7lkiExJ3j5_dkxqA/exec",
+        "https://api.web3forms.com/submit",
         {
           method: "POST",
-          mode: "no-cors",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
+            access_key: "db7f8e45-fd25-4056-b057-04ca4f3b507f", // Remplacez par votre clé Web3Forms
             name: formData.name,
             email: formData.email,
             subject: formData.subject,
@@ -33,14 +33,19 @@ export function Contact({ darkMode }: ContactProps) {
         }
       );
       
-      setSent(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setTimeout(() => setSent(false), 4000);
+      const data = await response.json();
+      
+      if (data.success) {
+        setSent(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setTimeout(() => setSent(false), 4000);
+      } else {
+        console.error("Error:", data);
+        alert("Une erreur est survenue. Veuillez réessayer.");
+      }
     } catch (error) {
-      console.error("Error sending message:", error);
-      setSent(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setTimeout(() => setSent(false), 4000);
+      console.error("Error:", error);
+      alert("Une erreur est survenue. Veuillez réessayer.");
     } finally {
       setLoading(false);
     }
