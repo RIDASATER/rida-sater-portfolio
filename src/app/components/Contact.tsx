@@ -17,7 +17,7 @@ export function Contact({ darkMode }: ContactProps) {
     
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxpIrQLpyzaaR6U1GPJ_WnEhT_c_TqYjZ99aJ7kuhUGZu-NM5GWJONGGj-LuoExa0Bq2Q/exec",
+        "https://script.google.com/macros/s/AKfycbzMAZoPqN8b_Zuco4UVljS_-Fb-GSno3DBkgW35yFVr3TpOskAdyU7lkiExJ3j5_dkxqA/exec",
         {
           method: "POST",
           mode: "no-cors",
