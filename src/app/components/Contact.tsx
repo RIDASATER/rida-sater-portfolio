@@ -11,15 +11,39 @@ export function Contact({ darkMode }: ContactProps) {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbxpIrQLpyzaaR6U1GPJ_WnEhT_c_TqYjZ99aJ7kuhUGZu-NM5GWJONGGj-LuoExa0Bq2Q/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+          }),
+        }
+      );
+      
       setSent(true);
       setFormData({ name: "", email: "", subject: "", message: "" });
       setTimeout(() => setSent(false), 4000);
-    }, 1200);
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setSent(true);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      setTimeout(() => setSent(false), 4000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass = `w-full px-4 py-3 rounded-xl border outline-none transition-all text-sm ${
