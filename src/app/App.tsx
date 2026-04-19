@@ -5,6 +5,9 @@ import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
+import { Certifications } from "./components/Certifications";
+import { EventsWorkshops } from "./components/EventsWorkshops";
+import { LeadershipVolunteering } from "./components/LeadershipVolunteering";
 import { Achievements } from "./components/Achievements";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -27,6 +30,9 @@ export default function App() {
       <Skills darkMode={darkMode} />
       <Experience darkMode={darkMode} />
       <Projects darkMode={darkMode} />
+      <Certifications darkMode={darkMode} />
+      <EventsWorkshops darkMode={darkMode} />
+      <LeadershipVolunteering darkMode={darkMode} />
       <Achievements darkMode={darkMode} />
       <Contact darkMode={darkMode} />
       <Footer darkMode={darkMode} />
