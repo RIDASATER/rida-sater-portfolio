@@ -7,7 +7,7 @@ interface ExperienceProps {
 const experiences = [
   {
     company: "ORMVAO, Ouarzazate",
-    role: "AI Engineer Intern (Stage)",
+    role: "AI Engineer Intern",
     period: "March 2026 – June 2026",
     type: "Internship",
     color: "blue",
@@ -20,7 +20,7 @@ const experiences = [
     tags: ["Python", "LSTM", "PostgreSQL", "ETL", "Metabase"],
   },
   {
-    company: "HICTII, London",
+    company: "HICTIJ, London",
     role: "Full-Stack AI Engineer (Apprenticeship/Remote)",
     period: "January 2025 – June 2025",
     type: "Apprenticeship",
