@@ -9,23 +9,23 @@ interface AboutProps {
 
 const education = [
   {
-    degree: "Master of Excellence",
+    degree: "Master's Degree",
     field: "Data Science & Information Systems Security",
-    school: "Sultan Moulay Slimane University",
+    school: "Faculty of Applied Sciences, Beni Mellal · 2024 – 2026",
     icon: "🎓",
     color: "blue",
   },
   {
     degree: "Bachelor's Degree",
     field: "Data Science & Information Systems Security",
-    school: "Sultan Moulay Slimane University",
+    school: "Faculty of Polydisciplinary, Beni Mellal · 2023 – 2024",
     icon: "📘",
     color: "green",
   },
   {
     degree: "DUT",
-    field: "Systems and Network Administration",
-    school: "EST Khénifra",
+    field: "Systems & Networks Administration",
+    school: "EST, Khénifra · 2021 – 2023",
     icon: "🖥️",
     color: "red",
   },
@@ -73,7 +73,7 @@ export function About({ darkMode }: AboutProps) {
           <FadeIn delay={0.1}>
             <div>
               <p className={`text-lg leading-relaxed mb-6 ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-                I am Rida SATER a <strong className={darkMode ? "text-white" : "text-gray-900"}>Data Scientist and Software Engineer</strong> specialized
+                I am Rida SATER a <strong className={darkMode ? "text-white" : "text-gray-900"}>Data Scientist &amp; AI Engineer</strong> specialized
                 in Artificial Intelligence, Machine Learning, Natural Language Processing and Full-Stack Development.
               </p>
               <p className={`text-lg leading-relaxed mb-8 ${darkMode ? "text-gray-400" : "text-gray-600"}`}>

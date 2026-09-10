@@ -183,6 +183,140 @@ const projects: Project[] = [
   },
 ];
 
+const portfolioProjects: Project[] = [
+  {
+    title: "DSS for Water Resource Management",
+    description:
+      "AI-based decision support system helping agricultural managers forecast irrigation needs, reduce water waste, and make data-informed resource decisions.",
+    image:
+      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1080&q=80",
+    tags: ["Python", "LSTM", "PostgreSQL", "ETL", "Metabase"],
+    category: "AI / Agriculture",
+    color: "blue",
+    emoji: "💧",
+    details: {
+      overview:
+        "An end-to-end AI decision support system for optimizing water resource management in agriculture. The platform combines meteorological and hydrological data with LSTM forecasting models to estimate irrigation needs and help agricultural managers plan more efficiently.",
+      features: [
+        "LSTM models for forecasting crop irrigation requirements",
+        "ETL pipeline integrating heterogeneous meteorological and hydrological data",
+        "PostgreSQL storage for structured environmental and operational data",
+        "Interactive Metabase dashboards for strategic decision-making",
+        "Data-driven recommendations for more efficient water allocation",
+      ],
+      architecture: [
+        "Data Sources: Meteorological and hydrological datasets",
+        "ETL Layer: Python ingestion, cleaning, transformation, and validation",
+        "Storage Layer: PostgreSQL database for integrated data",
+        "Modeling Layer: LSTM time-series forecasting for irrigation needs",
+        "Analytics Layer: Metabase dashboards for agricultural managers",
+      ],
+      challenges: [
+        "Combining data from heterogeneous environmental sources",
+        "Capturing seasonal patterns and dependencies in irrigation demand",
+        "Presenting complex forecasts in a practical decision-support workflow",
+      ],
+      outcome:
+        "The system achieved a 15% reduction in water waste while providing agricultural managers with clearer forecasts and actionable dashboards.",
+    },
+  },
+  {
+    title: "MLOps Pipeline for Text Classification",
+    description:
+      "Production-ready text classification pipeline with experiment tracking, containerization, API serving, and automated CI/CD.",
+    image:
+      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1080&q=80",
+    tags: ["MLflow", "Docker", "FastAPI", "GitHub Actions", "CI/CD"],
+    category: "MLOps / NLP",
+    color: "purple",
+    emoji: "⚙️",
+    details: {
+      overview:
+        "An industrialized text classification workflow designed to move a machine learning model from experimentation to reliable production deployment.",
+      features: [
+        "MLflow experiment tracking and model versioning",
+        "Docker containerization for reproducible environments",
+        "FastAPI endpoints for real-time model inference",
+        "GitHub Actions workflows for automated testing and deployment",
+      ],
+      architecture: [
+        "Training pipeline with tracked experiments and registered models",
+        "Containerized inference service with FastAPI",
+        "Automated CI/CD pipeline using GitHub Actions",
+      ],
+      challenges: [
+        "Keeping experiments reproducible across development environments",
+        "Automating the path from a validated model to deployment",
+      ],
+      outcome: "Delivered a fully automated, production-ready text classification pipeline.",
+    },
+  },
+  {
+    title: "Driver Drowsiness Detection System",
+    description:
+      "Real-time embedded safety system using computer vision and CNN models to detect eye states and trigger IoT alerts.",
+    image:
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1080&q=80",
+    tags: ["OpenCV", "CNN", "TensorFlow", "IoT", "Real-time"],
+    category: "Computer Vision / IoT",
+    color: "green",
+    emoji: "👁️",
+    details: {
+      overview:
+        "A real-time embedded system that monitors a driver's eye state through computer vision and alerts the driver when signs of drowsiness are detected.",
+      features: [
+        "OpenCV-based real-time video and facial feature processing",
+        "CNN classification of open and closed eye states",
+        "Continuous monitoring for fatigue indicators",
+        "IoT-connected alert system to help prevent accidents",
+      ],
+      architecture: [
+        "Camera input and frame preprocessing with OpenCV",
+        "Facial and eye region extraction",
+        "CNN inference for eye-state classification",
+        "IoT alert output when drowsiness thresholds are reached",
+      ],
+      challenges: [
+        "Maintaining reliable detection under changing lighting conditions",
+        "Balancing quick alerts with false-positive reduction",
+      ],
+      outcome: "Created a responsive embedded prototype for early driver drowsiness alerts.",
+    },
+  },
+  {
+    title: "AI Resume Optimizer (NLP)",
+    description:
+      "BERT-powered NLP solution that analyzes job descriptions and recommends missing keywords to improve CV compatibility with ATS systems.",
+    image:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1080&q=80",
+    tags: ["BERT", "NLP", "Python", "ATS", "Keyword Analysis"],
+    category: "NLP / Career Tech",
+    color: "orange",
+    emoji: "📄",
+    details: {
+      overview:
+        "An intelligent resume analysis tool that compares a candidate's CV with a target job description and provides actionable recommendations for stronger ATS compatibility.",
+      features: [
+        "BERT-based semantic analysis of job descriptions and resume content",
+        "Extraction of important skills and domain-specific keywords",
+        "Detection of missing or underrepresented resume terms",
+        "Actionable recommendations for improving ATS matching",
+      ],
+      architecture: [
+        "Document parsing and text normalization",
+        "BERT embeddings for semantic representation",
+        "Keyword and skill comparison engine",
+        "Recommendation layer generating personalized resume improvements",
+      ],
+      challenges: [
+        "Matching equivalent skills expressed with different terminology",
+        "Separating meaningful requirements from generic job-description language",
+      ],
+      outcome: "Developed a smart NLP assistant for more targeted and ATS-friendly CV optimization.",
+    },
+  },
+];
+
 const colorMap: Record<string, { badge: string; badgeDark: string; tag: string; tagDark: string; gradient: string; accent: string; accentDark: string }> = {
   blue: {
     badge: "bg-blue-50 text-blue-600",
@@ -416,7 +550,7 @@ export function Projects({ darkMode }: ProjectsProps) {
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {projects.map((project, i) => {
+          {portfolioProjects.map((project, i) => {
             const c = colorMap[project.color];
             return (
               <motion.div

@@ -11,7 +11,6 @@ const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Certifications", href: "#certifications" },
-  { label: "Events", href: "#events-workshops" },
   { label: "Leadership", href: "#leadership-volunteering" },
   { label: "Contact", href: "#contact" },
 ];
@@ -42,7 +41,7 @@ export function Footer({ darkMode }: FooterProps) {
               </span>
             </div>
             <p className={`text-sm leading-relaxed max-w-xs ${darkMode ? "text-gray-500" : "text-gray-500"}`}>
-              Data Scientist & Software Engineer building intelligent systems and scalable digital solutions.
+              Data Scientist & AI Engineer building intelligent systems and scalable digital solutions.
             </p>
           </div>
 

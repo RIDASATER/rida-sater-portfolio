@@ -17,6 +17,19 @@ interface VolunteerRole {
 
 const roles: VolunteerRole[] = [
   {
+    organization: "Ministry of Youth, Culture and Communication",
+    role: "Participant — MOTATWI3 Program",
+    duration: "2026 edition · 4th",
+    description: "Participant in the MOTATWI3 program supporting digital excellence, knowledge exchange, and innovation.",
+    responsibilities: [
+      "Organized conferences and training sessions for club members covering AI, data science, and digital transformation.",
+      "Facilitated knowledge exchange and networking between students, industry experts, and professors.",
+      "Coordinated club activities and events, promoting a culture of digital excellence and innovation.",
+    ],
+    achievements: ["Supported collaborative learning and digital innovation initiatives."],
+    skills: ["AI", "Data Science", "Digital Transformation", "Networking"],
+  },
+  {
     organization: "Excellence Digital Club",
     role: "Coordinateur",
     duration: "Feb 2025 – Jul 2025",
@@ -32,36 +45,6 @@ const roles: VolunteerRole[] = [
       "Improved student engagement in digital topics",
     ],
     skills: ["Event Management", "Communication", "Coordination"],
-  },
-  {
-    organization: "University Sultan Moulay Slimane",
-    role: "Vice President – Digital Club",
-    duration: "Sep 2022 – Jan 2023",
-    description: "Leadership role in managing digital initiatives and student activities.",
-    responsibilities: [
-      "Led digital initiatives",
-      "Coordinated technical projects and events",
-    ],
-    achievements: ["Contributed to successful execution of tech events"],
-    skills: ["Leadership", "Project Coordination"],
-  },
-  {
-    organization: "University Sultan Moulay Slimane",
-    role: "Participant – Computer Science Club",
-    duration: "Sep 2021 – Sep 2022",
-    description: "Early involvement in tech community and skill development.",
-    responsibilities: ["Participated in technical workshops", "Learned new technologies"],
-    achievements: ["Built foundational skills in Python and AI"],
-    skills: ["Python", "Technical Learning"],
-  },
-  {
-    organization: "Lycée Abou Dar Elghafari",
-    role: "Participant – Reading Club",
-    duration: "Oct 2019 – Jan 2021",
-    description: "Participation in cultural and educational activities.",
-    responsibilities: ["Engaged in discussions and debates", "Participated in group activities"],
-    achievements: ["Improved communication and critical thinking"],
-    skills: ["Communication", "Critical Thinking"],
   },
 ];
 
