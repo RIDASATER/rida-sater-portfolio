@@ -143,7 +143,7 @@ export function Contact({ darkMode }: ContactProps) {
               {[
                 { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/rida-sater", color: "bg-blue-600" },
                 { icon: Github, label: "GitHub", href: "https://github.com/ridasater", color: darkMode ? "bg-gray-700" : "bg-gray-800" },
-                { icon: Download, label: "Download CV", href: "https://drive.google.com/file/d/1gVKIzeG2Ewv6SotKzHcVc10IFCaGNLBK/view?usp=drive_link", color: "bg-green-600" },
+                { icon: Download, label: "Download CV", href: "https://drive.google.com/file/d/1wjvJlSab7w5jHcGNsOYQZRn9B9rqC17h/view?usp=sharing", color: "bg-green-600" },
               ].map((link) => (
                 <motion.a
                   key={link.label}
