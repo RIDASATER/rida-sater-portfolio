@@ -83,7 +83,7 @@ export function About({ darkMode }: AboutProps) {
               {/* Info cards */}
               <div className="space-y-3">
                 {[
-                  { icon: MapPin, label: "Location", value: "Rabat, Morocco 🇲🇦" },
+                  { icon: MapPin, label: "Location & Mobility", value: "Rabat, Morocco 🇲🇦 · Open to work anywhere" },
                   { icon: GraduationCap, label: "Education", value: "Master of Excellence in Data Science" },
                   { icon: Globe, label: "Languages", value: "Arabic, French, English" },
                 ].map((item) => (
