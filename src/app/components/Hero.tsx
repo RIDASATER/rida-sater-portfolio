@@ -243,7 +243,7 @@ export function Hero({ darkMode }: HeroProps) {
                 className="text-base font-semibold tracking-widest uppercase"
                 style={{ color: darkMode ? "#60a5fa" : "#2563eb", letterSpacing: "0.15em" }}
               >
-                Data Scientist & Software Engineer
+                Data Scientist & AI Engineer
               </p>
             </motion.div>
 

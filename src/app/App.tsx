@@ -6,7 +6,7 @@ import { Skills } from "./components/Skills";
 import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { Certifications } from "./components/Certifications";
-import { EventsWorkshops } from "./components/EventsWorkshops";
+
 import { LeadershipVolunteering } from "./components/LeadershipVolunteering";
 import { Achievements } from "./components/Achievements";
 import { Contact } from "./components/Contact";
@@ -31,7 +31,7 @@ export default function App() {
       <Experience darkMode={darkMode} />
       <Projects darkMode={darkMode} />
       <Certifications darkMode={darkMode} />
-      <EventsWorkshops darkMode={darkMode} />
+      
       <LeadershipVolunteering darkMode={darkMode} />
       <Achievements darkMode={darkMode} />
       <Contact darkMode={darkMode} />
